@@ -8,7 +8,7 @@ public class MyClass {
         try {
             File file = new File("data.txt");
             FileInputStream readIn = new FileInputStream(file);
-            InputStreamReader read = new InputStreamReader(readIn, "UTF-8" );
+            InputStreamReader read = new InputStreamReader(readIn, "Big5" );
             BufferedReader bufferedReader = new BufferedReader(read);
             String oneLine = null;
             while ((oneLine = bufferedReader.readLine()) != null) {
@@ -17,7 +17,7 @@ public class MyClass {
             read.close();
         }
         catch (Exception e) {
-            System.out.println("Ū����󤺮e�X��");
+            System.out.println("Åª¨ú¤å¥ó¤º®e¥X¿ù");
             e.printStackTrace();
         }
     }
